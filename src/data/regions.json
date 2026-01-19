@@ -1,0 +1,16 @@
+{
+    "$schema": "../../schemas/Manual.regions.schema.json",
+    "Sandy Bay": {
+        "starting": true,
+        "connects_to": [
+            "Dino Island",
+            "Mars",
+            "Arctic",
+            "Xalax"
+        ]
+    },
+    "Dino Island": {},
+    "Mars": {},
+    "Arctic": {},
+    "Xalax": {}
+}

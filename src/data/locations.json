@@ -1,0 +1,194 @@
+{
+    "$schema": "../../schemas/Manual.locations.schema.json",
+    "data": [
+        {
+            "name": "Sandy Bay Race 1"
+        },
+        {
+            "name": "Sandy Bay Race 2"
+        },
+        {
+            "name": "Sandy Bay Race 3"
+        },
+        {
+            "name": "Sandy Bay Race 4"
+        },
+        {
+            "name": "Sandy Bay Easy Minigame"
+        },
+        {
+            "name": "Sandy Bay Hard Minigame",
+            "requires": "|Sandy Bay Hard Minigame|"
+        },
+        {
+            "name": "Sandy Bay Mountain Golden Brick"
+        },
+        {
+            "name": "Sandy Bay Cliffside Golden Brick"
+        },
+        {
+            "name": "Sandy Bay Beachside Golden Brick"
+        },
+        {
+            "name": "Dino Island Race 1",
+            "requires": "|Dino Island Race 1|"
+        },
+        {
+            "name": "Dino Island Race 2",
+            "requires": "|Dino Island Race 2|"
+        },
+        {
+            "name": "Dino Island Race 3",
+            "requires": "|Dino Island Race 3|"
+        },
+        {
+            "name": "Dino Island Race 4",
+            "requires": "|Dino Island Race 4|"
+        },
+        {
+            "name": "Dino Island Boss",
+            "requires": "|Dino Island Boss Piece:4|"
+        },
+        {
+            "name": "Dino Island Easy Minigame",
+            "requires": "|Dino Island Exploration|"
+        },
+        {
+            "name": "Dino Island Hard Minigame",
+            "requires": "|Dino Island Exploration| and |Dino Island Hard Minigame|"
+        },
+        {
+            "name": "Dino Island Jungle Golden Brick",
+            "requires": "|Dino Island Exploration|"
+        },
+        {
+            "name": "Dino Island Plateau Golden Brick",
+            "requires": "|Dino Island Exploration|"
+        },
+        {
+            "name": "Dino Island Oceanside Golden Brick",
+            "requires": "|Dino Island Exploration|"
+        },
+        {
+            "name": "Mars Race 1",
+            "requires": "|Mars Race 1|"
+        },
+        {
+            "name": "Mars Race 2",
+            "requires": "|Mars Race 2|"
+        },
+        {
+            "name": "Mars Race 3",
+            "requires": "|Mars Race 3|"
+        },
+        {
+            "name": "Mars Race 4",
+            "requires": "|Mars Race 4|"
+        },
+        {
+            "name": "Mars Boss",
+            "requires": "|Mars Boss Piece:4|"
+        },
+        {
+            "name": "Mars Easy Minigame",
+            "requires": "|Mars Exploration|"
+        },
+        {
+            "name": "Mars Hard Minigame",
+            "requires": "|Mars Exploration| and |Mars Hard Minigame|"
+        },
+        {
+            "name": "Mars Alien Base Golden Brick",
+            "requires": "|Mars Exploration|"
+        },
+        {
+            "name": "Mars Gold Mine Golden Brick",
+            "requires": "|Mars Exploration|"
+        },
+        {
+            "name": "Mars Powerstore Golden Brick",
+            "requires": "|Mars Exploration|"
+        },
+        {
+            "name": "Arctic Race 1",
+            "requires": "|Arctic Race 1|"
+        },
+        {
+            "name": "Arctic Race 2",
+            "requires": "|Arctic Race 2|"
+        },
+        {
+            "name": "Arctic Race 3",
+            "requires": "|Arctic Race 3|"
+        },
+        {
+            "name": "Arctic Race 4",
+            "requires": "|Arctic Race 4|"
+        },
+        {
+            "name": "Arctic Boss",
+            "requires": "|Arctic Boss Piece:4|"
+        },
+        {
+            "name": "Arctic Easy Minigame",
+            "requires": "|Arctic Exploration|"
+        },
+        {
+            "name": "Arctic Hard Minigame",
+            "requires": "|Arctic Exploration| and |Arctic Hard Minigame|"
+        },
+        {
+            "name": "Arctic Trapped Ship Golden Brick",
+            "requires": "|Arctic Exploration|"
+        },
+        {
+            "name": "Arctic Crash Site Golden Brick",
+            "requires": "|Arctic Exploration|"
+        },
+        {
+            "name": "Arctic Base Camp Golden Brick",
+            "requires": "|Arctic Exploration|"
+        },
+        {
+            "name": "Xalax Race 1",
+            "requires": "|Xalax Race 1|"
+        },
+        {
+            "name": "Xalax Race 2",
+            "requires": "|Xalax Race 2|"
+        },
+        {
+            "name": "Xalax Race 3",
+            "requires": "|Xalax Race 3|"
+        },
+        {
+            "name": "Xalax Race 4",
+            "requires": "|Xalax Race 4|"
+        },
+        {
+            "name": "Xalax Boss",
+            "requires": "|Xalax Boss Piece:4|",
+            "victory": true
+        },
+        {
+            "name": "Xalax Easy Minigame",
+            "requires": "|Xalax Exploration|"
+        },
+        {
+            "name": "Xalax Hard Minigame",
+            "requires": "|Xalax Exploration| and |Xalax Hard Minigame|"
+        },
+        {
+            "name": "Xalax Dormant Volcano Golden Brick",
+            "requires": "|Xalax Exploration|"
+        },
+        {
+            "name": "Xalax Jump Ramp Golden Brick",
+            "requires": "|Xalax Exploration|"
+        },
+        {
+            "name": "Xalax Tubeside Golden Brick",
+            "requires": "|Xalax Exploration|"
+        }
+    ]
+}

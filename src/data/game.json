@@ -1,0 +1,8 @@
+{
+    "$schema": "../../schemas/Manual.game.schema.json",
+    "game": "LEGO Racers 2",
+    "creator": "Nixill",
+    "filler_item_name": "Filler Item",
+    "death_link": true,
+    "_comment": "Version 1.0.0"
+}
