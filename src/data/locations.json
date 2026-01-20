@@ -47,7 +47,7 @@
         },
         {
             "name": "Dino Island Boss",
-            "requires": "|Dino Island Boss Piece:4|"
+            "requires": "|Dino Island Boss Piece:3|"
         },
         {
             "name": "Dino Island Easy Minigame",
@@ -87,7 +87,7 @@
         },
         {
             "name": "Mars Boss",
-            "requires": "|Mars Boss Piece:4|"
+            "requires": "|Mars Boss Piece:3|"
         },
         {
             "name": "Mars Easy Minigame",
@@ -127,7 +127,7 @@
         },
         {
             "name": "Arctic Boss",
-            "requires": "|Arctic Boss Piece:4|"
+            "requires": "|Arctic Boss Piece:3|"
         },
         {
             "name": "Arctic Easy Minigame",
@@ -167,7 +167,7 @@
         },
         {
             "name": "Xalax Boss",
-            "requires": "|Xalax Boss Piece:4|",
+            "requires": "|Xalax Boss Piece:3|",
             "victory": true
         },
         {
