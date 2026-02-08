@@ -6,20 +6,19 @@
                 "What is the player's goal?",
                 "",
                 "- rocket_racer: Defeat Rocket Racer.",
+                "",
+                "This is a placeholder for future goals, such as:",
                 "- all_bosses: Defeat all bosses.",
                 "- all_races: Win all 24 races, in any order.",
                 "- hundred_percent: Win all 24 races and all 10 minigames, and collect all ground golden bricks.",
                 "- everything: hundred_percent, plus talk to every NPC.",
+                "If the goal is not rocket_racer, then clearing Rocket Racer's track becomes a check.",
                 "",
-                "If the goal is not rocket_racer, then clearing Rocket Racer's track becomes a check."
+                "For now, the player may decide on a goal and manually limit themself to not beating Rocket Racer until the conditions are met."
             ],
             "type": "Choice",
             "values": {
-                "rocket_racer": 0,
-                "all_bosses": 1,
-                "all_races": 2,
-                "hundred_percent": 3,
-                "everything": 4
+                "rocket_racer": 0
             }
         },
         "enable_talksanity": {
