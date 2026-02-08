@@ -51,7 +51,18 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
-    locationNamesToRemove: list[str] = [] # List of location names
+    locationNamesToRemove: list[str] = [
+        'The Grand Finale (Victory)',
+        'All Bosses Defeated (Victory)',
+        'All Races Won (Victory)',
+        '100% Completion (Victory)'
+    ] # List of location names
+
+    if get_option_value(multiworld, player, "goal_condition") == 0: locationNamesToRemove.remove('The Grand Finale (Victory)')
+    elif get_option_value(multiworld, player, "goal_condition") == 1: locationNamesToRemove.remove('All Bosses Defeated (Victory)')
+    elif get_option_value(multiworld, player, "goal_condition") == 2: locationNamesToRemove.remove('All Races Won (Victory)')
+    elif get_option_value(multiworld, player, "goal_condition") == 3: locationNamesToRemove.remove('100% Completion (Victory)')
+    elif get_option_value(multiworld, player, "goal_condition") == 4: locationNamesToRemove.remove('100% Completion (Victory)')
 
     # Add your code here to calculate which locations to remove
 
@@ -71,10 +82,10 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
     # Hard Bonus Game Keys: Progression or filler?
-    if is_option_enabled(multiworld, player, "bonus_games_are_checks"):
-        bonusGameItemConfig = {"progression": 1}
+    if is_option_enabled(multiworld, player, "bonus_games_are_checks") or get_option_value(multiworld, player, "goal_condition") >= 4:
+        bonusGameItemConfig = {"progression": 1, "filler": 0}
     else:
-        bonusGameItemConfig = {"progression": 0}
+        bonusGameItemConfig = {"progression": 0, "filler": 1}
     for s in ["Sandy Bay", "Dino Island", "Mars", "Arctic", "Xalax"]:
         item_config[s + " Hard Bonus Game Key"] = bonusGameItemConfig
 

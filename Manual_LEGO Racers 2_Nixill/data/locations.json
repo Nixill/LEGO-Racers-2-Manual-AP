@@ -5,38 +5,47 @@
             "name": "Race: Dig-a-Brick",
             "region": "Sandy Bay",
             "sort-key": "1-1-1",
-            "requires": null
+            "category": [
+                "Sandy Bay"
+            ]
         },
         {
             "name": "Race: Express Delivery",
             "region": "Sandy Bay",
             "sort-key": "1-1-2",
-            "requires": null
+            "category": [
+                "Sandy Bay"
+            ]
         },
         {
             "name": "Race: Hot Stuff",
             "region": "Sandy Bay",
             "sort-key": "1-1-3",
-            "requires": null
+            "category": [
+                "Sandy Bay"
+            ]
         },
         {
             "name": "Race: Bobby\u0027s Beat",
             "region": "Sandy Bay",
             "sort-key": "1-1-4",
-            "requires": null
+            "category": [
+                "Sandy Bay"
+            ]
         },
         {
             "name": "Bonus Game: Sandy Bay Easy",
             "category": [
+                "Sandy Bay",
                 "Minigames"
             ],
             "region": "Sandy Bay",
-            "sort-key": "1-3-1",
-            "requires": null
+            "sort-key": "1-3-1"
         },
         {
             "name": "Bonus Game: Sandy Bay Hard",
             "category": [
+                "Sandy Bay",
                 "Minigames"
             ],
             "requires": "|Sandy Bay Hard Bonus Game Key|",
@@ -45,241 +54,262 @@
         },
         {
             "name": "Golden Brick: Beachside",
-            "requires": null,
             "region": "Sandy Bay",
-            "sort-key": "1-3-3"
+            "sort-key": "1-3-3",
+            "category": [
+                "Sandy Bay"
+            ]
         },
         {
             "name": "Golden Brick: Cliffside",
-            "requires": null,
             "region": "Sandy Bay",
-            "sort-key": "1-3-4"
+            "sort-key": "1-3-4",
+            "category": [
+                "Sandy Bay"
+            ]
         },
         {
             "name": "Golden Brick: Mountain",
-            "requires": null,
             "region": "Sandy Bay",
-            "sort-key": "1-3-5"
+            "sort-key": "1-3-5",
+            "category": [
+                "Sandy Bay"
+            ]
         },
         {
             "name": "NPC: (player)",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-1",
-            "requires": null
+            "sort-key": "1-4-1"
         },
         {
             "name": "NPC: Ben",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-2",
-            "requires": null
+            "sort-key": "1-4-2"
         },
         {
             "name": "NPC: Captain Geoff",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-3",
-            "requires": null
+            "sort-key": "1-4-3"
         },
         {
             "name": "NPC: Doctor Dave",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-4",
-            "requires": null
+            "sort-key": "1-4-4"
         },
         {
             "name": "NPC: Fireman Gavin",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-5",
-            "requires": null
+            "sort-key": "1-4-5"
         },
         {
             "name": "NPC: Fisherman",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-6",
-            "requires": null
+            "sort-key": "1-4-6"
         },
         {
             "name": "NPC: Foreman Stu",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-7",
-            "requires": null
+            "sort-key": "1-4-7"
         },
         {
             "name": "NPC: Gillian",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-8",
-            "requires": null
+            "sort-key": "1-4-8"
         },
         {
             "name": "NPC: Jan",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-9",
-            "requires": null
+            "sort-key": "1-4-9"
         },
         {
             "name": "NPC: Jay",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-10",
-            "requires": null
+            "sort-key": "1-4-10"
         },
         {
             "name": "NPC: Jimmy",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-11",
-            "requires": null
+            "sort-key": "1-4-11"
         },
         {
             "name": "NPC: Laura",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-12",
-            "requires": null
+            "sort-key": "1-4-12"
         },
         {
             "name": "NPC: Mike the Postman",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-13",
-            "requires": null
+            "sort-key": "1-4-13"
         },
         {
             "name": "NPC: Pauline",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-14",
-            "requires": null
+            "sort-key": "1-4-14"
         },
         {
             "name": "NPC: PC Bobby",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-15",
-            "requires": null
+            "sort-key": "1-4-15"
         },
         {
             "name": "NPC: Rachel",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-16",
-            "requires": null
+            "sort-key": "1-4-16"
         },
         {
             "name": "NPC: Sparky",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-17",
-            "requires": null
+            "sort-key": "1-4-17"
         },
         {
             "name": "NPC: Steve",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-18",
-            "requires": null
+            "sort-key": "1-4-18"
         },
         {
             "name": "NPC: Suzie",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-19",
-            "requires": null
+            "sort-key": "1-4-19"
         },
         {
             "name": "NPC: Tony the Coastguard",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-20",
-            "requires": null
+            "sort-key": "1-4-20"
         },
         {
             "name": "NPC: Workman Fred",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-21",
-            "requires": null
+            "sort-key": "1-4-21"
         },
         {
             "name": "NPC: Workman Jon",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-22",
-            "requires": null
+            "sort-key": "1-4-22"
         },
         {
             "name": "NPC: Workman Rob",
             "category": [
+                "Sandy Bay",
                 "Talksanity"
             ],
-            "sort-key": "1-4-23",
-            "requires": null
+            "sort-key": "1-4-23"
         },
         {
             "name": "Race: Tribal Trouble",
             "region": "Dino Island",
             "sort-key": "2-1-1",
-            "requires": "|Tribal Trouble Race Key|"
+            "requires": "|Tribal Trouble Race Key|",
+            "category": [
+                "Dino Island"
+            ]
         },
         {
             "name": "Race: Dino Dodgems",
             "region": "Dino Island",
             "sort-key": "2-1-2",
-            "requires": "|Dino Dodgems Race Key|"
+            "requires": "|Dino Dodgems Race Key|",
+            "category": [
+                "Dino Island"
+            ]
         },
         {
             "name": "Race: The Lost Race World",
             "region": "Dino Island",
             "sort-key": "2-1-3",
-            "requires": "|The Lost Race World Race Key|"
+            "requires": "|The Lost Race World Race Key|",
+            "category": [
+                "Dino Island"
+            ]
         },
         {
             "name": "Race: Cretaceous Canyon",
             "region": "Dino Island",
             "sort-key": "2-1-4",
-            "requires": "|Cretaceous Canyon Race Key|"
+            "requires": "|Cretaceous Canyon Race Key|",
+            "category": [
+                "Dino Island"
+            ]
         },
         {
             "name": "Boss: Sam Sanister\u0027s Slammer (Check 1)",
-            "requires": "{OptionCount(Dino Island Boss Key, xalax_keys_needed)}",
-            "category": [],
+            "requires": "{OptionCount(Dino Island Boss Key, boss_keys_needed)}",
+            "category": [
+                "Dino Island"
+            ],
             "region": "Dino Island",
             "sort-key": "2-2-1"
         },
         {
             "name": "Boss: Sam Sanister\u0027s Slammer (Check 2)",
-            "requires": "{OptionCount(Dino Island Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Dino Island Boss Key, boss_keys_needed)}",
             "category": [
+                "Dino Island",
                 "Second Boss Checks"
             ],
             "region": "Dino Island",
@@ -287,8 +317,9 @@
         },
         {
             "name": "Boss: Sam Sanister\u0027s Slammer (Check 3)",
-            "requires": "{OptionCount(Dino Island Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Dino Island Boss Key, boss_keys_needed)}",
             "category": [
+                "Dino Island",
                 "Third Boss Checks"
             ],
             "region": "Dino Island",
@@ -296,8 +327,9 @@
         },
         {
             "name": "Boss: Sam Sanister\u0027s Slammer (Check 4)",
-            "requires": "{OptionCount(Dino Island Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Dino Island Boss Key, boss_keys_needed)}",
             "category": [
+                "Dino Island",
                 "Fourth Boss Checks"
             ],
             "region": "Dino Island",
@@ -305,8 +337,9 @@
         },
         {
             "name": "Boss: Sam Sanister\u0027s Slammer (Check 5)",
-            "requires": "{OptionCount(Dino Island Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Dino Island Boss Key, boss_keys_needed)}",
             "category": [
+                "Dino Island",
                 "Fifth Boss Checks"
             ],
             "region": "Dino Island",
@@ -315,6 +348,7 @@
         {
             "name": "Bonus Game: Dino Island Easy",
             "category": [
+                "Dino Island",
                 "Minigames"
             ],
             "region": "Dino Island",
@@ -324,6 +358,7 @@
         {
             "name": "Bonus Game: Dino Island Hard",
             "category": [
+                "Dino Island",
                 "Minigames"
             ],
             "requires": "|Dino Island Hard Bonus Game Key| and |Dino Island Exploration Key|",
@@ -334,23 +369,33 @@
             "name": "Golden Brick: Plateau",
             "requires": "|Dino Island Exploration Key|",
             "region": "Dino Island",
-            "sort-key": "2-3-3"
+            "sort-key": "2-3-3",
+            "category": [
+                "Dino Island"
+            ]
         },
         {
             "name": "Golden Brick: Oceanside",
             "requires": "|Dino Island Exploration Key|",
             "region": "Dino Island",
-            "sort-key": "2-3-4"
+            "sort-key": "2-3-4",
+            "category": [
+                "Dino Island"
+            ]
         },
         {
             "name": "Golden Brick: Jungle",
             "requires": "|Dino Island Exploration Key|",
             "region": "Dino Island",
-            "sort-key": "2-3-5"
+            "sort-key": "2-3-5",
+            "category": [
+                "Dino Island"
+            ]
         },
         {
             "name": "NPC: Achu",
             "category": [
+                "Dino Island",
                 "Talksanity"
             ],
             "sort-key": "2-4-1",
@@ -359,6 +404,7 @@
         {
             "name": "NPC: Alexandria Sanister",
             "category": [
+                "Dino Island",
                 "Talksanity"
             ],
             "sort-key": "2-4-2",
@@ -367,6 +413,7 @@
         {
             "name": "NPC: Bungo",
             "category": [
+                "Dino Island",
                 "Talksanity"
             ],
             "sort-key": "2-4-3",
@@ -375,6 +422,7 @@
         {
             "name": "NPC: Johnny Thunder",
             "category": [
+                "Dino Island",
                 "Talksanity"
             ],
             "sort-key": "2-4-4",
@@ -383,6 +431,7 @@
         {
             "name": "NPC: Mike",
             "category": [
+                "Dino Island",
                 "Talksanity"
             ],
             "sort-key": "2-4-5",
@@ -391,6 +440,7 @@
         {
             "name": "NPC: Morat",
             "category": [
+                "Dino Island",
                 "Talksanity"
             ],
             "sort-key": "2-4-6",
@@ -399,6 +449,7 @@
         {
             "name": "NPC: Pippin",
             "category": [
+                "Dino Island",
                 "Talksanity"
             ],
             "sort-key": "2-4-7",
@@ -407,6 +458,7 @@
         {
             "name": "NPC: Slyboots",
             "category": [
+                "Dino Island",
                 "Talksanity"
             ],
             "sort-key": "2-4-8",
@@ -416,6 +468,7 @@
             "name": "NPC: Sam Sanister",
             "requires": "{OptionCount(Dino Island Boss Key, xalax_keys_needed)}",
             "category": [
+                "Dino Island",
                 "Talksanity"
             ],
             "sort-key": "2-4-9"
@@ -424,37 +477,52 @@
             "name": "Race: The Phobos Anomaly",
             "region": "Mars",
             "sort-key": "3-1-1",
-            "requires": "|The Phobos Anomaly Race Key|"
+            "requires": "|The Phobos Anomaly Race Key|",
+            "category": [
+                "Mars"
+            ]
         },
         {
             "name": "Race: Red Run",
             "region": "Mars",
             "sort-key": "3-1-2",
-            "requires": "|Red Run Race Key|"
+            "requires": "|Red Run Race Key|",
+            "category": [
+                "Mars"
+            ]
         },
         {
             "name": "Race: Deimos Derby",
             "region": "Mars",
             "sort-key": "3-1-3",
-            "requires": "|Deimos Derby Race Key|"
+            "requires": "|Deimos Derby Race Key|",
+            "category": [
+                "Mars"
+            ]
         },
         {
             "name": "Race: Contact",
             "region": "Mars",
             "sort-key": "3-1-4",
-            "requires": "|Contact Race Key|"
+            "requires": "|Contact Race Key|",
+            "category": [
+                "Mars"
+            ]
         },
         {
             "name": "Boss: Riegel\u0027s Racetrak (Check 1)",
-            "requires": "{OptionCount(Mars Boss Key, xalax_keys_needed)}",
-            "category": [],
+            "requires": "{OptionCount(Mars Boss Key, boss_keys_needed)}",
+            "category": [
+                "Mars"
+            ],
             "region": "Mars",
             "sort-key": "3-2-1"
         },
         {
             "name": "Boss: Riegel\u0027s Racetrak (Check 2)",
-            "requires": "{OptionCount(Mars Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Mars Boss Key, boss_keys_needed)}",
             "category": [
+                "Mars",
                 "Second Boss Checks"
             ],
             "region": "Mars",
@@ -462,8 +530,9 @@
         },
         {
             "name": "Boss: Riegel\u0027s Racetrak (Check 3)",
-            "requires": "{OptionCount(Mars Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Mars Boss Key, boss_keys_needed)}",
             "category": [
+                "Mars",
                 "Third Boss Checks"
             ],
             "region": "Mars",
@@ -471,8 +540,9 @@
         },
         {
             "name": "Boss: Riegel\u0027s Racetrak (Check 4)",
-            "requires": "{OptionCount(Mars Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Mars Boss Key, boss_keys_needed)}",
             "category": [
+                "Mars",
                 "Fourth Boss Checks"
             ],
             "region": "Mars",
@@ -480,8 +550,9 @@
         },
         {
             "name": "Boss: Riegel\u0027s Racetrak (Check 5)",
-            "requires": "{OptionCount(Mars Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Mars Boss Key, boss_keys_needed)}",
             "category": [
+                "Mars",
                 "Fifth Boss Checks"
             ],
             "region": "Mars",
@@ -490,6 +561,7 @@
         {
             "name": "Bonus Game: Mars Easy",
             "category": [
+                "Mars",
                 "Minigames"
             ],
             "region": "Mars",
@@ -499,6 +571,7 @@
         {
             "name": "Bonus Game: Mars Hard",
             "category": [
+                "Mars",
                 "Minigames"
             ],
             "requires": "|Mars Hard Bonus Game Key| and |Mars Exploration Key|",
@@ -509,23 +582,33 @@
             "name": "Golden Brick: Powerstore",
             "requires": "|Mars Exploration Key|",
             "region": "Mars",
-            "sort-key": "3-3-3"
+            "sort-key": "3-3-3",
+            "category": [
+                "Mars"
+            ]
         },
         {
             "name": "Golden Brick: Gold Mine",
             "requires": "|Mars Exploration Key|",
             "region": "Mars",
-            "sort-key": "3-3-4"
+            "sort-key": "3-3-4",
+            "category": [
+                "Mars"
+            ]
         },
         {
             "name": "Golden Brick: Alien Base",
             "requires": "|Mars Exploration Key|",
             "region": "Mars",
-            "sort-key": "3-3-5"
+            "sort-key": "3-3-5",
+            "category": [
+                "Mars"
+            ]
         },
         {
             "name": "NPC: Altair",
             "category": [
+                "Mars",
                 "Talksanity"
             ],
             "sort-key": "3-4-1",
@@ -534,6 +617,7 @@
         {
             "name": "NPC: Antares",
             "category": [
+                "Mars",
                 "Talksanity"
             ],
             "sort-key": "3-4-2",
@@ -542,14 +626,16 @@
         {
             "name": "NPC: BB",
             "category": [
+                "Mars",
                 "Talksanity"
             ],
             "sort-key": "3-4-3",
             "requires": "|Mars Exploration Key|"
         },
         {
-            "name": "NPC: Doc",
+            "name": "NPC: Doc (Mars)",
             "category": [
+                "Mars",
                 "Talksanity"
             ],
             "sort-key": "3-4-4",
@@ -558,6 +644,7 @@
         {
             "name": "NPC: Scientist",
             "category": [
+                "Mars",
                 "Talksanity"
             ],
             "sort-key": "3-4-5",
@@ -566,6 +653,7 @@
         {
             "name": "NPC: Vega",
             "category": [
+                "Mars",
                 "Talksanity"
             ],
             "sort-key": "3-4-6",
@@ -575,6 +663,7 @@
             "name": "NPC: Riegel",
             "requires": "{OptionCount(Mars Boss Key, xalax_keys_needed)}",
             "category": [
+                "Mars",
                 "Talksanity"
             ],
             "sort-key": "3-4-7"
@@ -583,37 +672,52 @@
             "name": "Race: Winter Wonderland",
             "region": "Arctic",
             "sort-key": "4-1-1",
-            "requires": "|Winter Wonderland Race Key|"
+            "requires": "|Winter Wonderland Race Key|",
+            "category": [
+                "Arctic"
+            ]
         },
         {
             "name": "Race: Ice Canyons",
             "region": "Arctic",
             "sort-key": "4-1-2",
-            "requires": "|Ice Canyons Race Key|"
+            "requires": "|Ice Canyons Race Key|",
+            "category": [
+                "Arctic"
+            ]
         },
         {
             "name": "Race: Slip Sliding",
             "region": "Arctic",
             "sort-key": "4-1-3",
-            "requires": "|Slip Sliding Race Key|"
+            "requires": "|Slip Sliding Race Key|",
+            "category": [
+                "Arctic"
+            ]
         },
         {
             "name": "Race: Chill Thrill",
             "region": "Arctic",
             "sort-key": "4-1-4",
-            "requires": "|Chill Thrill Race Key|"
+            "requires": "|Chill Thrill Race Key|",
+            "category": [
+                "Arctic"
+            ]
         },
         {
             "name": "Boss: The Berg\u0027s Royal Rumble (Check 1)",
-            "requires": "{OptionCount(Arctic Boss Key, xalax_keys_needed)}",
-            "category": [],
+            "requires": "{OptionCount(Arctic Boss Key, boss_keys_needed)}",
+            "category": [
+                "Arctic"
+            ],
             "region": "Arctic",
             "sort-key": "4-2-1"
         },
         {
             "name": "Boss: The Berg\u0027s Royal Rumble (Check 2)",
-            "requires": "{OptionCount(Arctic Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Arctic Boss Key, boss_keys_needed)}",
             "category": [
+                "Arctic",
                 "Second Boss Checks"
             ],
             "region": "Arctic",
@@ -621,8 +725,9 @@
         },
         {
             "name": "Boss: The Berg\u0027s Royal Rumble (Check 3)",
-            "requires": "{OptionCount(Arctic Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Arctic Boss Key, boss_keys_needed)}",
             "category": [
+                "Arctic",
                 "Third Boss Checks"
             ],
             "region": "Arctic",
@@ -630,8 +735,9 @@
         },
         {
             "name": "Boss: The Berg\u0027s Royal Rumble (Check 4)",
-            "requires": "{OptionCount(Arctic Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Arctic Boss Key, boss_keys_needed)}",
             "category": [
+                "Arctic",
                 "Fourth Boss Checks"
             ],
             "region": "Arctic",
@@ -639,8 +745,9 @@
         },
         {
             "name": "Boss: The Berg\u0027s Royal Rumble (Check 5)",
-            "requires": "{OptionCount(Arctic Boss Key, xalax_keys_needed)}",
+            "requires": "{OptionCount(Arctic Boss Key, boss_keys_needed)}",
             "category": [
+                "Arctic",
                 "Fifth Boss Checks"
             ],
             "region": "Arctic",
@@ -649,6 +756,7 @@
         {
             "name": "Bonus Game: Arctic Easy",
             "category": [
+                "Arctic",
                 "Minigames"
             ],
             "region": "Arctic",
@@ -658,6 +766,7 @@
         {
             "name": "Bonus Game: Arctic Hard",
             "category": [
+                "Arctic",
                 "Minigames"
             ],
             "requires": "|Arctic Hard Bonus Game Key| and |Arctic Exploration Key|",
@@ -668,23 +777,33 @@
             "name": "Golden Brick: Crash Site",
             "requires": "|Arctic Exploration Key|",
             "region": "Arctic",
-            "sort-key": "4-3-3"
+            "sort-key": "4-3-3",
+            "category": [
+                "Arctic"
+            ]
         },
         {
             "name": "Golden Brick: Trapped Ship",
             "requires": "|Arctic Exploration Key|",
             "region": "Arctic",
-            "sort-key": "4-3-4"
+            "sort-key": "4-3-4",
+            "category": [
+                "Arctic"
+            ]
         },
         {
             "name": "Golden Brick: Base Camp",
             "requires": "|Arctic Exploration Key|",
             "region": "Arctic",
-            "sort-key": "4-3-5"
+            "sort-key": "4-3-5",
+            "category": [
+                "Arctic"
+            ]
         },
         {
             "name": "NPC: Captain Ross",
             "category": [
+                "Arctic",
                 "Talksanity"
             ],
             "sort-key": "4-4-1",
@@ -693,6 +812,7 @@
         {
             "name": "NPC: Chilly",
             "category": [
+                "Arctic",
                 "Talksanity"
             ],
             "sort-key": "4-4-2",
@@ -701,6 +821,7 @@
         {
             "name": "NPC: Cosmo",
             "category": [
+                "Arctic",
                 "Talksanity"
             ],
             "sort-key": "4-4-3",
@@ -709,14 +830,16 @@
         {
             "name": "NPC: Crystal",
             "category": [
+                "Arctic",
                 "Talksanity"
             ],
             "sort-key": "4-4-4",
             "requires": "|Arctic Exploration Key|"
         },
         {
-            "name": "NPC: Doc",
+            "name": "NPC: Doc (Arctic)",
             "category": [
+                "Arctic",
                 "Talksanity"
             ],
             "sort-key": "4-4-5",
@@ -725,6 +848,7 @@
         {
             "name": "NPC: Frosty",
             "category": [
+                "Arctic",
                 "Talksanity"
             ],
             "sort-key": "4-4-6",
@@ -734,6 +858,7 @@
             "name": "NPC: The Berg",
             "requires": "{OptionCount(Arctic Boss Key, xalax_keys_needed)}",
             "category": [
+                "Arctic",
                 "Talksanity"
             ],
             "sort-key": "4-4-7"
@@ -742,30 +867,43 @@
             "name": "Race: Wheeled Warriors",
             "region": "Xalax",
             "sort-key": "5-1-1",
-            "requires": "|Wheeled Warriors Race Key|"
+            "requires": "|Wheeled Warriors Race Key|",
+            "category": [
+                "Xalax"
+            ]
         },
         {
             "name": "Race: Smash \u0027n\u0027 Bash",
             "region": "Xalax",
             "sort-key": "5-1-2",
-            "requires": "|Smash \u0027n\u0027 Bash Race Key|"
+            "requires": "|Smash \u0027n\u0027 Bash Race Key|",
+            "category": [
+                "Xalax"
+            ]
         },
         {
             "name": "Race: Vertigo",
             "region": "Xalax",
             "sort-key": "5-1-3",
-            "requires": "|Vertigo Race Key|"
+            "requires": "|Vertigo Race Key|",
+            "category": [
+                "Xalax"
+            ]
         },
         {
             "name": "Race: Beyond the Dome",
             "region": "Xalax",
             "sort-key": "5-1-4",
-            "requires": "|Beyond the Dome Race Key|"
+            "requires": "|Beyond the Dome Race Key|",
+            "category": [
+                "Xalax"
+            ]
         },
         {
             "name": "Boss: The Grand Finale (Check 1)",
-            "requires": "{OptionCount(Xalax Boss Key, boss_keys_needed)}",
+            "requires": "{OptionCount(Xalax Boss Key, xalax_keys_needed)}",
             "category": [
+                "Xalax",
                 "Xalax Boss Checks"
             ],
             "region": "Xalax",
@@ -773,8 +911,9 @@
         },
         {
             "name": "Boss: The Grand Finale (Check 2)",
-            "requires": "{OptionCount(Xalax Boss Key, boss_keys_needed)}",
+            "requires": "{OptionCount(Xalax Boss Key, xalax_keys_needed)}",
             "category": [
+                "Xalax",
                 "Xalax Boss Checks",
                 "Second Boss Checks"
             ],
@@ -783,8 +922,9 @@
         },
         {
             "name": "Boss: The Grand Finale (Check 3)",
-            "requires": "{OptionCount(Xalax Boss Key, boss_keys_needed)}",
+            "requires": "{OptionCount(Xalax Boss Key, xalax_keys_needed)}",
             "category": [
+                "Xalax",
                 "Xalax Boss Checks",
                 "Third Boss Checks"
             ],
@@ -793,8 +933,9 @@
         },
         {
             "name": "Boss: The Grand Finale (Check 4)",
-            "requires": "{OptionCount(Xalax Boss Key, boss_keys_needed)}",
+            "requires": "{OptionCount(Xalax Boss Key, xalax_keys_needed)}",
             "category": [
+                "Xalax",
                 "Xalax Boss Checks",
                 "Fourth Boss Checks"
             ],
@@ -803,8 +944,9 @@
         },
         {
             "name": "Boss: The Grand Finale (Check 5)",
-            "requires": "{OptionCount(Xalax Boss Key, boss_keys_needed)}",
+            "requires": "{OptionCount(Xalax Boss Key, xalax_keys_needed)}",
             "category": [
+                "Xalax",
                 "Xalax Boss Checks",
                 "Fifth Boss Checks"
             ],
@@ -814,6 +956,7 @@
         {
             "name": "Bonus Game: Xalax Easy",
             "category": [
+                "Xalax",
                 "Minigames"
             ],
             "region": "Xalax",
@@ -823,6 +966,7 @@
         {
             "name": "Bonus Game: Xalax Hard",
             "category": [
+                "Xalax",
                 "Minigames"
             ],
             "requires": "|Xalax Hard Bonus Game Key| and |Xalax Exploration Key|",
@@ -833,23 +977,33 @@
             "name": "Golden Brick: Tubeside",
             "requires": "|Xalax Exploration Key|",
             "region": "Xalax",
-            "sort-key": "5-3-3"
+            "sort-key": "5-3-3",
+            "category": [
+                "Xalax"
+            ]
         },
         {
             "name": "Golden Brick: Jump Ramp",
             "requires": "|Xalax Exploration Key|",
             "region": "Xalax",
-            "sort-key": "5-3-4"
+            "sort-key": "5-3-4",
+            "category": [
+                "Xalax"
+            ]
         },
         {
             "name": "Golden Brick: Dormant Volcano",
             "requires": "|Xalax Exploration Key|",
             "region": "Xalax",
-            "sort-key": "5-3-5"
+            "sort-key": "5-3-5",
+            "category": [
+                "Xalax"
+            ]
         },
         {
             "name": "NPC: Warrior",
             "category": [
+                "Xalax",
                 "Talksanity"
             ],
             "sort-key": "5-4-1",
@@ -859,9 +1013,30 @@
             "name": "NPC: Rocket Racer",
             "requires": "{OptionCount(Xalax Boss Key, boss_keys_needed)}",
             "category": [
+                "Xalax",
                 "Talksanity"
             ],
             "sort-key": "5-4-2"
+        },
+        {
+            "name": "The Grand Finale (Victory)",
+            "victory": true,
+            "requires": "{OptionCount(Xalax Boss Key, xalax_keys_needed)}"
+        },
+        {
+            "name": "All Bosses Defeated (Victory)",
+            "victory": true,
+            "requires": "{OptionCount(Xalax Boss Key, xalax_keys_needed)} and {OptionCount(Dino Island Boss Key, boss_keys_needed)} and {OptionCount(Mars Boss Key, boss_keys_needed)} and {OptionCount(Arctic Boss Key, boss_keys_needed)}"
+        },
+        {
+            "name": "All Races Won (Victory)",
+            "victory": true,
+            "requires": "{OptionCount(Xalax Boss Key, xalax_keys_needed)} and {OptionCount(Dino Island Boss Key, boss_keys_needed)} and {OptionCount(Mars Boss Key, boss_keys_needed)} and {OptionCount(Arctic Boss Key, boss_keys_needed)} and |Tribal Trouble Race Key| and |Dino Dodgems Race Key| and |The Lost Race World Race Key| and |Cretaceous Canyon Race Key| and |The Phobos Anomaly Race Key| and |Red Run Race Key| and |Deimos Derby Race Key| and |Contact Race Key| and |Winter Wonderland Race Key| and |Ice Canyons Race Key| and |Slip Sliding Race Key| and |Chill Thrill Race Key| and |Wheeled Warriors Race Key| and |Smash \u0027n\u0027 Bash Race Key| and |Vertigo Race Key| and |Beyond the Dome Race Key|"
+        },
+        {
+            "name": "100% Completion (Victory)",
+            "victory": true,
+            "requires": "{OptionCount(Xalax Boss Key, xalax_keys_needed)} and |Xalax Exploration Key| and {OptionCount(Dino Island Boss Key, boss_keys_needed)} and |Dino Island Exploration Key| and |Dino Island Hard Bonus Game Key| and {OptionCount(Mars Boss Key, boss_keys_needed)} and |Mars Exploration Key| and |Mars Hard Bonus Game Key| and {OptionCount(Arctic Boss Key, boss_keys_needed)} and |Arctic Exploration Key| and |Arctic Hard Bonus Game Key| and |Tribal Trouble Race Key| and |Dino Dodgems Race Key| and |The Lost Race World Race Key| and |Cretaceous Canyon Race Key| and |The Phobos Anomaly Race Key| and |Red Run Race Key| and |Deimos Derby Race Key| and |Contact Race Key| and |Winter Wonderland Race Key| and |Ice Canyons Race Key| and |Slip Sliding Race Key| and |Chill Thrill Race Key| and |Wheeled Warriors Race Key| and |Smash \u0027n\u0027 Bash Race Key| and |Vertigo Race Key| and |Beyond the Dome Race Key| and |Sandy Bay Hard Bonus Game Key| and |Xalax Hard Bonus Game Key|"
         }
     ]
 }

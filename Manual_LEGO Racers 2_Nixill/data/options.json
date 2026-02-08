@@ -76,7 +76,7 @@
             "type": "Range",
             "range_start": 1,
             "range_end": 5,
-            "default": 0
+            "default": 1
         },
         "bonus_games_are_checks": {
             "description": [

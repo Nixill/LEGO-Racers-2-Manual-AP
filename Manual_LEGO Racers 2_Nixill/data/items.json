@@ -6,148 +6,257 @@
             "classification_count": {
                 "progression": 1,
                 "filler": 1
-            }
+            },
+            "category": [
+                "Sandy Bay",
+                "Exploration and Minigames"
+            ]
         },
         {
             "name": "Tribal Trouble Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Dino Island",
+                "Race Keys"
+            ]
         },
         {
             "name": "Dino Dodgems Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Dino Island",
+                "Race Keys"
+            ]
         },
         {
             "name": "The Lost Race World Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Dino Island",
+                "Race Keys"
+            ]
         },
         {
             "name": "Cretaceous Canyon Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Dino Island",
+                "Race Keys"
+            ]
         },
         {
             "name": "Dino Island Boss Key",
-            "classification_count": {
-                "progression": 5,
-                "filler": 5
-            }
+            "count": 5,
+            "progression": true,
+            "category": [
+                "Dino Island",
+                "Boss Keys"
+            ]
         },
         {
             "name": "Dino Island Exploration Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Dino Island",
+                "Exploration and Minigames"
+            ]
         },
         {
             "name": "Dino Island Hard Bonus Game Key",
             "classification_count": {
                 "progression": 1,
                 "filler": 1
-            }
+            },
+            "category": [
+                "Dino Island",
+                "Exploration and Minigames"
+            ]
         },
         {
             "name": "The Phobos Anomaly Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Mars",
+                "Race Keys"
+            ]
         },
         {
             "name": "Red Run Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Mars",
+                "Race Keys"
+            ]
         },
         {
             "name": "Deimos Derby Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Mars",
+                "Race Keys"
+            ]
         },
         {
             "name": "Contact Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Mars",
+                "Race Keys"
+            ]
         },
         {
             "name": "Mars Boss Key",
-            "classification_count": {
-                "progression": 5,
-                "filler": 5
-            }
+            "count": 5,
+            "progression": true,
+            "category": [
+                "Mars",
+                "Boss Keys"
+            ]
         },
         {
             "name": "Mars Exploration Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Mars",
+                "Exploration and Minigames"
+            ]
         },
         {
             "name": "Mars Hard Bonus Game Key",
             "classification_count": {
                 "progression": 1,
                 "filler": 1
-            }
+            },
+            "category": [
+                "Mars",
+                "Exploration and Minigames"
+            ]
         },
         {
             "name": "Winter Wonderland Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Arctic",
+                "Race Keys"
+            ]
         },
         {
             "name": "Ice Canyons Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Arctic",
+                "Race Keys"
+            ]
         },
         {
             "name": "Slip Sliding Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Arctic",
+                "Race Keys"
+            ]
         },
         {
             "name": "Chill Thrill Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Arctic",
+                "Race Keys"
+            ]
         },
         {
             "name": "Arctic Boss Key",
-            "classification_count": {
-                "progression": 5,
-                "filler": 5
-            }
+            "count": 5,
+            "progression": true,
+            "category": [
+                "Arctic",
+                "Boss Keys"
+            ]
         },
         {
             "name": "Arctic Exploration Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Arctic",
+                "Exploration and Minigames"
+            ]
         },
         {
             "name": "Arctic Hard Bonus Game Key",
             "classification_count": {
                 "progression": 1,
                 "filler": 1
-            }
+            },
+            "category": [
+                "Arctic",
+                "Exploration and Minigames"
+            ]
         },
         {
             "name": "Wheeled Warriors Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Xalax",
+                "Race Keys"
+            ]
         },
         {
             "name": "Smash \u0027n\u0027 Bash Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Xalax",
+                "Race Keys"
+            ]
         },
         {
             "name": "Vertigo Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Xalax",
+                "Race Keys"
+            ]
         },
         {
             "name": "Beyond the Dome Race Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Xalax",
+                "Race Keys"
+            ]
         },
         {
             "name": "Xalax Boss Key",
-            "classification_count": {
-                "progression": 5,
-                "filler": 5
-            }
+            "count": 5,
+            "progression": true,
+            "category": [
+                "Xalax",
+                "Boss Keys"
+            ]
         },
         {
             "name": "Xalax Exploration Key",
-            "progression": true
+            "progression": true,
+            "category": [
+                "Xalax",
+                "Exploration and Minigames"
+            ]
         },
         {
             "name": "Xalax Hard Bonus Game Key",
             "classification_count": {
                 "progression": 1,
                 "filler": 1
-            }
+            },
+            "category": [
+                "Xalax",
+                "Exploration and Minigames"
+            ]
         },
         {
             "name": "TRAP - Item Embargo",
             "trap": true,
             "category": [
+                "Traps",
                 "TRAP - Item Embargo"
             ]
         },
@@ -155,6 +264,7 @@
             "name": "TRAP - Freeze",
             "trap": true,
             "category": [
+                "Traps",
                 "TRAP - Freeze"
             ]
         },
@@ -162,6 +272,7 @@
             "name": "TRAP - Destroy your Car",
             "trap": true,
             "category": [
+                "Traps",
                 "TRAP - Destroy your Car"
             ]
         },
@@ -169,6 +280,7 @@
             "name": "TRAP - Hold Talk",
             "trap": true,
             "category": [
+                "Traps",
                 "TRAP - Hold Talk"
             ]
         },
@@ -176,6 +288,7 @@
             "name": "TRAP - No Shortcuts",
             "trap": true,
             "category": [
+                "Traps",
                 "TRAP - No Shortcuts"
             ]
         },
@@ -183,6 +296,7 @@
             "name": "TRAP - No Pitstops",
             "trap": true,
             "category": [
+                "Traps",
                 "TRAP - No Pitstops"
             ]
         },
@@ -190,6 +304,7 @@
             "name": "TRAP - Drive in Reverse",
             "trap": true,
             "category": [
+                "Traps",
                 "TRAP - Drive in Reverse"
             ]
         }

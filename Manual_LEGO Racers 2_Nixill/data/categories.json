@@ -1,5 +1,14 @@
 {
     "$schema": "../../schemas/Manual.categories.schema.json",
+    "Sandy Bay": {},
+    "Dino Island": {},
+    "Mars": {},
+    "Arctic": {},
+    "Xalax": {},
+    "Traps": {},
+    "Race Keys": {},
+    "Boss Keys": {},
+    "Exploration and Minigames": {},
     "Minigames": {
         "yaml_option": [
             "bonus_games_are_checks"

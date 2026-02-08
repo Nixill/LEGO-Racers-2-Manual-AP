@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 // Directory.SetCurrentDirectory("..");
 
 LegoWorld SandyBay = new LegoWorld(
-  Name: "Sandy Bay",
+  WorldName: "Sandy Bay",
   RaceNames: ["Dig-a-Brick", "Express Delivery", "Hot Stuff", "Bobby's Beat"],
   BossRaceName: null,
   GoldenBrickNames: ["Beachside", "Cliffside", "Mountain"],
@@ -45,7 +45,7 @@ LegoWorld SandyBay = new LegoWorld(
 );
 
 LegoWorld DinoIsland = new LegoWorld(
-  Name: "Dino Island",
+  WorldName: "Dino Island",
   RaceNames: [
     "Tribal Trouble",
     "Dino Dodgems",
@@ -73,7 +73,7 @@ LegoWorld DinoIsland = new LegoWorld(
 );
 
 LegoWorld Mars = new LegoWorld(
-  Name: "Mars",
+  WorldName: "Mars",
   RaceNames: [
     "The Phobos Anomaly",
     "Red Run",
@@ -90,7 +90,7 @@ LegoWorld Mars = new LegoWorld(
     "Altair",
     "Antares",
     "BB",
-    "Doc",
+    "Doc (Mars)",
     "Scientist",
     "Vega"
   ],
@@ -99,7 +99,7 @@ LegoWorld Mars = new LegoWorld(
 );
 
 LegoWorld Arctic = new LegoWorld(
-  Name: "Arctic",
+  WorldName: "Arctic",
   RaceNames: [
     "Winter Wonderland",
     "Ice Canyons",
@@ -116,7 +116,7 @@ LegoWorld Arctic = new LegoWorld(
     "Chilly",
     "Cosmo",
     "Crystal",
-    "Doc",
+    "Doc (Arctic)",
     "Frosty"
   ],
   NPCBossName: "The Berg",
@@ -124,7 +124,7 @@ LegoWorld Arctic = new LegoWorld(
 );
 
 LegoWorld Xalax = new LegoWorld(
-  Name: "Xalax",
+  WorldName: "Xalax",
   RaceNames: [
     "Wheeled Warriors",
     "Smash 'n' Bash",
@@ -155,7 +155,7 @@ JsonSerializerOptions options = new JsonSerializerOptions
 };
 
 // Note that these file paths are relative to the *root of this repository* (the parent directory to this file's location).
-File.WriteAllText("src/data/items.json", new JsonObject
+File.WriteAllText("Manual_LEGO Racers 2_Nixill/data/items.json", RemoveNullObj(new JsonObject
 {
   ["$schema"] = "../../schemas/Manual.items.schema.json",
   ["data"] = new JsonArray([
@@ -166,9 +166,9 @@ File.WriteAllText("src/data/items.json", new JsonObject
     .. Xalax.GetItems(),
     .. GetTraps()
   ])
-}.ToJsonString(options));
+}).ToJsonString(options));
 
-File.WriteAllText("src/data/locations.json", new JsonObject
+File.WriteAllText("Manual_LEGO Racers 2_Nixill/data/locations.json", RemoveNullObj(new JsonObject
 {
   ["schema"] = "../../schemas/Manual.locations.schema.json",
   ["data"] = new JsonArray([
@@ -176,9 +176,10 @@ File.WriteAllText("src/data/locations.json", new JsonObject
     .. DinoIsland.GetLocations(),
     .. Mars.GetLocations(),
     .. Arctic.GetLocations(),
-    .. Xalax.GetLocations()
+    .. Xalax.GetLocations(),
+    .. GetVictoryLocations()
   ])
-}.ToJsonString(options));
+}).ToJsonString(options));
 
 IEnumerable<JsonObject> GetTraps() =>
 [
@@ -195,10 +196,72 @@ JsonObject GetTrap(string name) => new JsonObject
 {
   ["name"] = $"TRAP - {name}",
   ["trap"] = true,
-  ["category"] = new JsonArray([$"TRAP - {name}"])
+  ["category"] = new JsonArray(["Traps", $"TRAP - {name}"])
 };
 
-record class LegoWorld(string Name, string[] RaceNames, string? BossRaceName, string[] GoldenBrickNames, string[] NPCNames, string? NPCBossName, int WorldIndex, bool IsStartingWorld = false, bool IsFinalWorld = false)
+JsonObject RemoveNullObj(JsonObject input)
+{
+  var kvps = input.ToArray();
+  foreach (var kvp in kvps)
+  {
+    if (kvp.Value is null) input.Remove(kvp.Key);
+    else if (kvp.Value is JsonArray arr) RemoveNullArr(arr);
+    else if (kvp.Value is JsonObject obj) RemoveNullObj(obj);
+  }
+  return input;
+}
+
+JsonArray RemoveNullArr(JsonArray input)
+{
+  for (int i = 0; i < input.Count; i++)
+  {
+    if (input[i] is null)
+    {
+      input.RemoveAt(i);
+      i--;
+    }
+    else if (input[i] is JsonArray arr) RemoveNullArr(arr);
+    else if (input[i] is JsonObject obj) RemoveNullObj(obj);
+  }
+  return input;
+}
+
+IEnumerable<JsonObject> GetVictoryLocations() =>
+[
+  new() {
+    ["name"] = "The Grand Finale (Victory)",
+    ["victory"] = true,
+    ["requires"] = "{OptionCount(Xalax Boss Key, xalax_keys_needed)}"
+  },
+  new() {
+    ["name"] = "All Bosses Defeated (Victory)",
+    ["victory"] = true,
+    ["requires"] = "{OptionCount(Xalax Boss Key, xalax_keys_needed)}"
+      + string.Join("", Enumerable.Select(["Dino Island", "Mars", "Arctic"],
+        s => $" and {{OptionCount({s} Boss Key, boss_keys_needed)}}"))
+  },
+  new() {
+    ["name"] = "All Races Won (Victory)",
+    ["victory"] = true,
+    ["requires"] = "{OptionCount(Xalax Boss Key, xalax_keys_needed)}"
+      + string.Join("", Enumerable.Select(["Dino Island", "Mars", "Arctic"],
+        s => $" and {{OptionCount({s} Boss Key, boss_keys_needed)}}"))
+      + string.Join("", Enumerable.SelectMany([DinoIsland, Mars, Arctic, Xalax],
+        w => w.RaceNames).Select(s => $" and |{s} Race Key|"))
+  },
+  new() {
+    ["name"] = "100% Completion (Victory)",
+    ["victory"] = true,
+    ["requires"] = "{OptionCount(Xalax Boss Key, xalax_keys_needed)} and |Xalax Exploration Key|"
+      + string.Join("", Enumerable.Select(["Dino Island", "Mars", "Arctic"],
+        s => $" and {{OptionCount({s} Boss Key, boss_keys_needed)}} and |{s} Exploration Key| and |{s} Hard Bonus Game Key|"))
+      + string.Join("", Enumerable.SelectMany([DinoIsland, Mars, Arctic, Xalax],
+        w => w.RaceNames).Select(s => $" and |{s} Race Key|"))
+      + string.Join("", Enumerable.Select(["Sandy Bay", "Xalax"], s => $" and |{s} Hard Bonus Game Key|"))
+  }
+];
+
+record class LegoWorld(string WorldName, string[] RaceNames, string? BossRaceName, string[] GoldenBrickNames, string[] NPCNames, string? NPCBossName, int WorldIndex, bool IsStartingWorld = false, bool IsFinalWorld = false)
 {
   public IEnumerable<JsonObject> GetItems()
   {
@@ -208,31 +271,32 @@ record class LegoWorld(string Name, string[] RaceNames, string? BossRaceName, st
         yield return new JsonObject
         {
           ["name"] = $"{race} Race Key",
-          ["progression"] = true
+          ["progression"] = true,
+          ["category"] = new JsonArray([WorldName, "Race Keys"])
         };
       yield return new JsonObject
       {
-        ["name"] = $"{Name} Boss Key",
-        ["classification_count"] = new JsonObject
-        {
-          ["progression"] = 5,
-          ["filler"] = 5
-        }
+        ["name"] = $"{WorldName} Boss Key",
+        ["count"] = 5,
+        ["progression"] = true,
+        ["category"] = new JsonArray([WorldName, "Boss Keys"])
       };
       yield return new JsonObject
       {
-        ["name"] = $"{Name} Exploration Key",
-        ["progression"] = true
+        ["name"] = $"{WorldName} Exploration Key",
+        ["progression"] = true,
+        ["category"] = new JsonArray([WorldName, "Exploration and Minigames"])
       };
     }
     yield return new JsonObject
     {
-      ["name"] = $"{Name} Hard Bonus Game Key",
+      ["name"] = $"{WorldName} Hard Bonus Game Key",
       ["classification_count"] = new JsonObject
       {
         ["progression"] = 1,
         ["filler"] = 1
-      }
+      },
+      ["category"] = new JsonArray([WorldName, "Exploration and Minigames"])
     };
   }
 
@@ -243,9 +307,10 @@ record class LegoWorld(string Name, string[] RaceNames, string? BossRaceName, st
       yield return new JsonObject
       {
         ["name"] = $"Race: {race}",
-        ["region"] = Name,
+        ["region"] = WorldName,
         ["sort-key"] = $"{WorldIndex}-1-{i + 1}",
-        ["requires"] = IsStartingWorld ? null : $"|{race} Race Key|"
+        ["requires"] = IsStartingWorld ? null : $"|{race} Race Key|",
+        ["category"] = new JsonArray([WorldName])
       };
     }
 
@@ -254,14 +319,14 @@ record class LegoWorld(string Name, string[] RaceNames, string? BossRaceName, st
       foreach ((int i, string str) in Enumerable.Index(["", "Second", "Third", "Fourth", "Fifth"]))
       {
         List<JsonNode> cats = [];
-        if (IsFinalWorld) cats.Add($"{Name} Boss Checks");
+        if (IsFinalWorld) cats.Add($"{WorldName} Boss Checks");
         if (i > 0) cats.Add($"{str} Boss Checks");
         yield return new JsonObject
         {
           ["name"] = $"Boss: {BossRaceName} (Check {i + 1})",
-          ["requires"] = $"{{OptionCount({Name} Boss Key, {(IsFinalWorld ? "boss" : "xalax")}_keys_needed)}}",
-          ["category"] = new JsonArray([.. cats]),
-          ["region"] = Name,
+          ["requires"] = $"{{OptionCount({WorldName} Boss Key, {(IsFinalWorld ? "xalax" : "boss")}_keys_needed)}}",
+          ["category"] = new JsonArray([WorldName, .. cats]),
+          ["region"] = WorldName,
           ["sort-key"] = $"{WorldIndex}-2-{i + 1}"
         };
       }
@@ -269,19 +334,19 @@ record class LegoWorld(string Name, string[] RaceNames, string? BossRaceName, st
 
     yield return new JsonObject
     {
-      ["name"] = $"Bonus Game: {Name} Easy",
-      ["category"] = new JsonArray(["Minigames"]),
-      ["region"] = Name,
+      ["name"] = $"Bonus Game: {WorldName} Easy",
+      ["category"] = new JsonArray([WorldName, "Minigames"]),
+      ["region"] = WorldName,
       ["sort-key"] = $"{WorldIndex}-3-1",
-      ["requires"] = IsStartingWorld ? null : $"|{Name} Exploration Key|"
+      ["requires"] = IsStartingWorld ? null : $"|{WorldName} Exploration Key|"
     };
 
     yield return new JsonObject
     {
-      ["name"] = $"Bonus Game: {Name} Hard",
-      ["category"] = new JsonArray(["Minigames"]),
-      ["requires"] = $"|{Name} Hard Bonus Game Key|{(IsStartingWorld ? "" : $" and |{Name} Exploration Key|")}",
-      ["region"] = Name,
+      ["name"] = $"Bonus Game: {WorldName} Hard",
+      ["category"] = new JsonArray([WorldName, "Minigames"]),
+      ["requires"] = $"|{WorldName} Hard Bonus Game Key|{(IsStartingWorld ? "" : $" and |{WorldName} Exploration Key|")}",
+      ["region"] = WorldName,
       ["sort-key"] = $"{WorldIndex}-3-2"
     };
 
@@ -290,9 +355,10 @@ record class LegoWorld(string Name, string[] RaceNames, string? BossRaceName, st
       yield return new JsonObject
       {
         ["name"] = $"Golden Brick: {brick}",
-        ["requires"] = IsStartingWorld ? null : $"|{Name} Exploration Key|",
-        ["region"] = Name,
-        ["sort-key"] = $"{WorldIndex}-3-{i + 3}"
+        ["requires"] = IsStartingWorld ? null : $"|{WorldName} Exploration Key|",
+        ["region"] = WorldName,
+        ["sort-key"] = $"{WorldIndex}-3-{i + 3}",
+        ["category"] = new JsonArray([WorldName])
       };
     }
 
@@ -301,9 +367,9 @@ record class LegoWorld(string Name, string[] RaceNames, string? BossRaceName, st
       yield return new JsonObject
       {
         ["name"] = $"NPC: {chr}",
-        ["category"] = new JsonArray(["Talksanity"]),
+        ["category"] = new JsonArray([WorldName, "Talksanity"]),
         ["sort-key"] = $"{WorldIndex}-4-{i + 1}",
-        ["requires"] = IsStartingWorld ? null : $"|{Name} Exploration Key|"
+        ["requires"] = IsStartingWorld ? null : $"|{WorldName} Exploration Key|"
       };
     }
 
@@ -311,8 +377,8 @@ record class LegoWorld(string Name, string[] RaceNames, string? BossRaceName, st
       yield return new JsonObject
       {
         ["name"] = $"NPC: {NPCBossName}",
-        ["requires"] = $"{{OptionCount({Name} Boss Key, {(IsFinalWorld ? "boss" : "xalax")}_keys_needed)}}",
-        ["category"] = new JsonArray(["Talksanity"]),
+        ["requires"] = $"{{OptionCount({WorldName} Boss Key, {(IsFinalWorld ? "boss" : "xalax")}_keys_needed)}}",
+        ["category"] = new JsonArray([WorldName, "Talksanity"]),
         ["sort-key"] = $"{WorldIndex}-4-{NPCNames.Length + 1}"
       };
   }

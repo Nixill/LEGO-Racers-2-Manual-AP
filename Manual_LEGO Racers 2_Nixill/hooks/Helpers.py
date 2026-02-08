@@ -1,7 +1,16 @@
-from typing import Optional, Any
+from typing import Optional, Any, Union
 from BaseClasses import MultiWorld, Item, Location
-from ..Helpers import is_option_enabled, get_option_value
 
+# just copying these from ..Helpers to avoid circular imports
+def is_option_enabled(multiworld: MultiWorld, player: int, name: str) -> bool:
+    return get_option_value(multiworld, player, name) > 0
+
+def get_option_value(multiworld: MultiWorld, player: int, name: str) -> Union[int, dict]:
+    option = getattr(multiworld.worlds[player].options, name, None)
+    if option is None:
+        return 0
+
+    return option.value
 
 # Use this if you want to override the default behavior of is_option_enabled
 # Return True to enable the category, False to disable it, or None to use the default behavior
