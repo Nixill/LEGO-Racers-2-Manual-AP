@@ -1,0 +1,139 @@
+{
+    "$schema": "../../schemas/Manual.options.schema.json",
+    "user": {
+        "goal_condition": {
+            "description": [
+                "What is the player's goal?",
+                "",
+                "- rocket_racer: Defeat Rocket Racer.",
+                "- all_bosses: Defeat all bosses.",
+                "- all_races: Win all 24 races, in any order.",
+                "- hundred_percent: Win all 24 races and all 10 minigames, and collect all ground golden bricks.",
+                "- everything: hundred_percent, plus talk to every NPC.",
+                "",
+                "If the goal is not rocket_racer, then clearing Rocket Racer's track becomes a check."
+            ],
+            "type": "Choice",
+            "values": {
+                "rocket_racer": 0,
+                "all_bosses": 1,
+                "all_races": 2,
+                "hundred_percent": 3,
+                "everything": 4
+            }
+        },
+        "enable_talksanity": {
+            "description": [
+                "If enabled, every NPC becomes a check. Exploration is required to put those NPCs in logic,",
+                "but they may also be talked outside of logic during a race (against the clock)."
+            ],
+            "type": "Toggle",
+            "default": false
+        },
+        "boss_keys_needed": {
+            "description": [
+                "How many boss keys must you collect to unlock that boss race?",
+                "This option does not include Xalax."
+            ],
+            "type": "Range",
+            "range_start": 1,
+            "range_end": 5,
+            "default": 3
+        },
+        "boss_keys_extra": {
+            "description": [
+                "How many *extra* boss keys should spawn in addition to those necessary to unlock the race?",
+                "This option does not include Xalax."
+            ],
+            "type": "Range",
+            "range_start": 0,
+            "range_end": 5,
+            "default": 1
+        },
+        "xalax_keys_needed": {
+            "description": [
+                "How many keys must you collect to unlock The Grand Finale?"
+            ],
+            "type": "Range",
+            "range_start": 1,
+            "range_end": 5,
+            "default": 4
+        },
+        "xalax_keys_extra": {
+            "description": [
+                "How many *extra* keys should spawn in addition to those necessary to unlock The Grand Finale?"
+            ],
+            "type": "Range",
+            "range_start": 0,
+            "range_end": 5,
+            "default": 0
+        },
+        "boss_check_count": {
+            "description": [
+                "Clearing a boss counts for this many checks.",
+                "This includes The Grand Finale if that track is not the sole goal."
+            ],
+            "type": "Range",
+            "range_start": 1,
+            "range_end": 5,
+            "default": 0
+        },
+        "bonus_games_are_checks": {
+            "description": [
+                "If enabled, bonus games are checks in the AP.",
+                "Regardless of this value, bonus games grant the player a bonus item in-game."
+            ],
+            "type": "Toggle",
+            "default": true
+        },
+        "enable_trap_item_embargo": {
+            "description": [
+                "Whether or not the \"Item Embargo\" trap should be enabled."
+            ],
+            "type": "Toggle",
+            "default": true
+        },
+        "enable_trap_freeze": {
+            "description": [
+                "Whether or not the \"Freeze\" trap should be enabled."
+            ],
+            "type": "Toggle",
+            "default": true
+        },
+        "enable_trap_destroy_your_car": {
+            "description": [
+                "Whether or not the \"Destroy Your Car\" trap should be enabled."
+            ],
+            "type": "Toggle",
+            "default": true
+        },
+        "enable_trap_hold_talk": {
+            "description": [
+                "Whether or not the \"Hold Talk\" trap should be enabled."
+            ],
+            "type": "Toggle",
+            "default": true
+        },
+        "enable_trap_no_shortcuts": {
+            "description": [
+                "Whether or not the \"No Shortcuts\" trap should be enabled."
+            ],
+            "type": "Toggle",
+            "default": true
+        },
+        "enable_trap_no_pitstops": {
+            "description": [
+                "Whether or not the \"No Pitstops\" trap should be enabled."
+            ],
+            "type": "Toggle",
+            "default": true
+        },
+        "enable_trap_drive_in_reverse": {
+            "description": [
+                "Whether or not the \"Drive in Reverse\" trap should be enabled."
+            ],
+            "type": "Toggle",
+            "default": true
+        }
+    }
+}

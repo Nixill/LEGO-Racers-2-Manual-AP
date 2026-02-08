@@ -19,9 +19,9 @@ You may perform checks by:
 - Collecting an on-the-ground golden brick, in a world where exploration is unlocked
 
 The following are unlocked by checks:
-- Non-boss races (except for Sandy Bay, which is unlocked from the start)
-- Pieces of Boss Keys - it takes four of those to unlock a Boss Race
-- The ability to explore a world (except for Sandy Bay, which is unlocked from the start) to collect its on-the-ground golden bricks and bonus games
+- Non-boss races (except for Sandy Bay's, which are unlocked from the start)
+- Pieces of Boss Keys - four spawn per archipelago, and it takes three of those to unlock a Boss Race
+- The ability to explore a world (except for Sandy Bay, which is unlocked from the start) to collect its on-the-ground golden bricks and easy bonus games
 - The ability to play a world's hard bonus game (*includes* Sandy Bay; it is *not* unlocked from the start)
 
 Outside of Sandy Bay, you must unlock *both* exploration *and* hard bonus game to play that world's hard bonus game.

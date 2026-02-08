@@ -1,0 +1,197 @@
+{
+    "$schema": "../../schemas/Manual.items.schema.json",
+    "data": [
+        {
+            "name": "Sandy Bay Hard Bonus Game Key",
+            "classification_count": {
+                "progression": 1,
+                "filler": 1
+            }
+        },
+        {
+            "name": "Tribal Trouble Race Key",
+            "progression": true
+        },
+        {
+            "name": "Dino Dodgems Race Key",
+            "progression": true
+        },
+        {
+            "name": "The Lost Race World Race Key",
+            "progression": true
+        },
+        {
+            "name": "Cretaceous Canyon Race Key",
+            "progression": true
+        },
+        {
+            "name": "Dino Island Boss Key",
+            "classification_count": {
+                "progression": 5,
+                "filler": 5
+            }
+        },
+        {
+            "name": "Dino Island Exploration Key",
+            "progression": true
+        },
+        {
+            "name": "Dino Island Hard Bonus Game Key",
+            "classification_count": {
+                "progression": 1,
+                "filler": 1
+            }
+        },
+        {
+            "name": "The Phobos Anomaly Race Key",
+            "progression": true
+        },
+        {
+            "name": "Red Run Race Key",
+            "progression": true
+        },
+        {
+            "name": "Deimos Derby Race Key",
+            "progression": true
+        },
+        {
+            "name": "Contact Race Key",
+            "progression": true
+        },
+        {
+            "name": "Mars Boss Key",
+            "classification_count": {
+                "progression": 5,
+                "filler": 5
+            }
+        },
+        {
+            "name": "Mars Exploration Key",
+            "progression": true
+        },
+        {
+            "name": "Mars Hard Bonus Game Key",
+            "classification_count": {
+                "progression": 1,
+                "filler": 1
+            }
+        },
+        {
+            "name": "Winter Wonderland Race Key",
+            "progression": true
+        },
+        {
+            "name": "Ice Canyons Race Key",
+            "progression": true
+        },
+        {
+            "name": "Slip Sliding Race Key",
+            "progression": true
+        },
+        {
+            "name": "Chill Thrill Race Key",
+            "progression": true
+        },
+        {
+            "name": "Arctic Boss Key",
+            "classification_count": {
+                "progression": 5,
+                "filler": 5
+            }
+        },
+        {
+            "name": "Arctic Exploration Key",
+            "progression": true
+        },
+        {
+            "name": "Arctic Hard Bonus Game Key",
+            "classification_count": {
+                "progression": 1,
+                "filler": 1
+            }
+        },
+        {
+            "name": "Wheeled Warriors Race Key",
+            "progression": true
+        },
+        {
+            "name": "Smash \u0027n\u0027 Bash Race Key",
+            "progression": true
+        },
+        {
+            "name": "Vertigo Race Key",
+            "progression": true
+        },
+        {
+            "name": "Beyond the Dome Race Key",
+            "progression": true
+        },
+        {
+            "name": "Xalax Boss Key",
+            "classification_count": {
+                "progression": 5,
+                "filler": 5
+            }
+        },
+        {
+            "name": "Xalax Exploration Key",
+            "progression": true
+        },
+        {
+            "name": "Xalax Hard Bonus Game Key",
+            "classification_count": {
+                "progression": 1,
+                "filler": 1
+            }
+        },
+        {
+            "name": "TRAP - Item Embargo",
+            "trap": true,
+            "category": [
+                "TRAP - Item Embargo"
+            ]
+        },
+        {
+            "name": "TRAP - Freeze",
+            "trap": true,
+            "category": [
+                "TRAP - Freeze"
+            ]
+        },
+        {
+            "name": "TRAP - Destroy your Car",
+            "trap": true,
+            "category": [
+                "TRAP - Destroy your Car"
+            ]
+        },
+        {
+            "name": "TRAP - Hold Talk",
+            "trap": true,
+            "category": [
+                "TRAP - Hold Talk"
+            ]
+        },
+        {
+            "name": "TRAP - No Shortcuts",
+            "trap": true,
+            "category": [
+                "TRAP - No Shortcuts"
+            ]
+        },
+        {
+            "name": "TRAP - No Pitstops",
+            "trap": true,
+            "category": [
+                "TRAP - No Pitstops"
+            ]
+        },
+        {
+            "name": "TRAP - Drive in Reverse",
+            "trap": true,
+            "category": [
+                "TRAP - Drive in Reverse"
+            ]
+        }
+    ]
+}

@@ -70,6 +70,27 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
+    # Hard Bonus Game Keys: Progression or filler?
+    if is_option_enabled(multiworld, player, "bonus_games_are_checks"):
+        bonusGameItemConfig = {"progression": 1}
+    else:
+        bonusGameItemConfig = {"progression": 0}
+    for s in ["Sandy Bay", "Dino Island", "Mars", "Arctic", "Xalax"]:
+        item_config[s + " Hard Bonus Game Key"] = bonusGameItemConfig
+
+    # Non-Xalax Boss Keys: Progression or filler?
+    for s in ["Dino Island", "Mars", "Arctic"]:
+        item_config[s + " Boss Key"] = {
+            "progression": get_option_value(multiworld, player, "boss_keys_needed"),
+            "filler": get_option_value(multiworld, player, "boss_keys_extra")
+        }
+
+    # Xalax Boss Keys: Progression or filler?
+    item_config["Xalax Boss Key"] = {
+        "progression": get_option_value(multiworld, player, "xalax_keys_needed"),
+        "filler": get_option_value(multiworld, player, "xalax_keys_extra")
+    }
+
     return item_config
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
