@@ -1,0 +1,22 @@
+// This script will backup your existing save file, and then load the
+// save from this repository into your LEGO Racers 2 save locations.
+//
+// Settings (remember to change them on all scripts!)
+const string PreAPBackup = "GameSave-PreAPBackup";
+const string APReadySave = "GameSave-Archipelago";
+//
+// This script is only tested on Windows. Please feel free to test on Mac
+// or Linux, if you have LEGO Racers 2 working there, and submit a pull
+// request as appropriate to update the script!
+
+var lr2SaveFolder = Path.Combine(
+  Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+  "Games",
+  "LEGO Racers 2",
+  "Saved Games"
+);
+
+string SaveFile(string filename = "GameSave") => Path.Combine(lr2SaveFolder, filename);
+
+File.Copy(SaveFile(PreAPBackup), SaveFile(), true);
+Console.WriteLine("Done!");
