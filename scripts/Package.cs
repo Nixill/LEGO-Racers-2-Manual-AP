@@ -13,4 +13,5 @@ string gameCreator = "Nixill";
 
 string manualName = $"Manual_{gameName}_{gameCreator}";
 
-ZipFile.CreateFromDirectory(manualName, $"release/{manualName}.apworld");
+File.Delete($"release/{manualName}.apworld");
+ZipFile.CreateFromDirectory(manualName, $"release/{manualName}.apworld", CompressionLevel.Optimal, true);
