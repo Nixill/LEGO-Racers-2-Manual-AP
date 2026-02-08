@@ -4,7 +4,10 @@ This is an APWorld for LEGO Racers 2!
 # Before the run
 Before the run, you will want to set up a save file that has completed all races (The Grand Finale is optional) but has not collected any on-the-ground Golden Bricks or opened any bonus games. Such a save file is included within this repository, but you may wish to make your own so that you have your name and character and car choices on it.
 
-## Tip!
+## Tip 1!
+You can find scripts in this repository that will assist with the copying of save files. Currently, they're in `.cs` form, but I'll make a `.ps` form at some point...
+
+## Tip 2!
 Once you create the save, find the `GameSave` file in the folder `%USERPROFILE%\Documents\Games\LEGO Racers 2\Saved Games`, and make a copy of it as a backup. (Or, if you use the save included in this repository, overwrite the `GameSave` file with it.)
 
 ## Note!
@@ -30,7 +33,10 @@ Outside of Sandy Bay, you must unlock *both* exploration *and* hard bonus game t
 Golden bricks found on the ground are specifically named in this world. For a listing of which golden brick matches which name, you may check [this document](docs/golden-bricks.md).
 
 ## Victory conditions
-There are two victory conditions - the Any% route, which is to beat The Grand Finale, and the 100% route, which is to perform all 48 checks. Ask yourself before your run which one is right for you.
+There are several possible victory conditions. While the manual APworld only natively supports a check at the end of The Grand Finale, you could also limit yourself to a more restricted end condition by not performing that check until you meet one of the following conditions:
+1. You have completed the other boss races.
+2. You have completed all other races.
+3. You have performed all checks in the game.
 
 ## Death Link
 If playing with death link:
@@ -38,4 +44,4 @@ If playing with death link:
 - Any time you lose a race or a bonus game, or reset for any reason (other than resets for receiving a death link), you must send a death link.
 
 # Configuration
-This initial version has no configuration. In the future I'll add some!
+There is configuration added now, documentation pending...
