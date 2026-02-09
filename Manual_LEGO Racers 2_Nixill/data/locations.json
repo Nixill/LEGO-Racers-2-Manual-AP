@@ -465,15 +465,6 @@
             "requires": "|Dino Island Exploration Key|"
         },
         {
-            "name": "NPC: Sam Sanister",
-            "requires": "{OptionCount(Dino Island Boss Key, xalax_keys_needed)}",
-            "category": [
-                "Dino Island",
-                "Talksanity"
-            ],
-            "sort-key": "2-4-9"
-        },
-        {
             "name": "Race: The Phobos Anomaly",
             "region": "Mars",
             "sort-key": "3-1-1",
@@ -658,15 +649,6 @@
             ],
             "sort-key": "3-4-6",
             "requires": "|Mars Exploration Key|"
-        },
-        {
-            "name": "NPC: Riegel",
-            "requires": "{OptionCount(Mars Boss Key, xalax_keys_needed)}",
-            "category": [
-                "Mars",
-                "Talksanity"
-            ],
-            "sort-key": "3-4-7"
         },
         {
             "name": "Race: Winter Wonderland",
@@ -855,15 +837,6 @@
             "requires": "|Arctic Exploration Key|"
         },
         {
-            "name": "NPC: The Berg",
-            "requires": "{OptionCount(Arctic Boss Key, xalax_keys_needed)}",
-            "category": [
-                "Arctic",
-                "Talksanity"
-            ],
-            "sort-key": "4-4-7"
-        },
-        {
             "name": "Race: Wheeled Warriors",
             "region": "Xalax",
             "sort-key": "5-1-1",
@@ -1008,15 +981,6 @@
             ],
             "sort-key": "5-4-1",
             "requires": "|Xalax Exploration Key|"
-        },
-        {
-            "name": "NPC: Rocket Racer",
-            "requires": "{OptionCount(Xalax Boss Key, boss_keys_needed)}",
-            "category": [
-                "Xalax",
-                "Talksanity"
-            ],
-            "sort-key": "5-4-2"
         },
         {
             "name": "The Grand Finale (Victory)",

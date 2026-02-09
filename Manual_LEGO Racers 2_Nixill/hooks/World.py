@@ -2,6 +2,7 @@
 from typing import Any
 from worlds.AutoWorld import World
 from BaseClasses import MultiWorld, CollectionState, Item
+from ..Data import item_table
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
 from ..Items import ManualItem
@@ -101,6 +102,17 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
         "progression": get_option_value(multiworld, player, "xalax_keys_needed"),
         "filler": get_option_value(multiworld, player, "xalax_keys_extra")
     }
+
+    # Trap counts
+    for trap_item in [item['name'] for item in item_table if item.get('trap')]:
+        trap_option = 'trap_count_' + ('_'.join(trap_item.split(' - ')[1].split()).lower())
+        item_config[trap_item] = { "trap": get_option_value(multiworld, player, trap_option) }
+
+    # Cheese wedge count
+    # Cheese Wedge gets set to a "trap" here so that autodeletion places it on the same level as
+    # the other traps, rather than removing it first. It doesn't actually do anything *as* a trap.
+    # It's a "filler" in the original data so that the above code doesn't error on encountering it.
+    item_config["Cheese Wedge"] = { "trap": get_option_value(multiworld, player, "filler_count") }
 
     return item_config
 

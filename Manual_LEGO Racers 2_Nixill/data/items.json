@@ -255,58 +255,42 @@
         {
             "name": "TRAP - Item Embargo",
             "trap": true,
-            "category": [
-                "Traps",
-                "TRAP - Item Embargo"
-            ]
+            "count": 300
         },
         {
             "name": "TRAP - Freeze",
             "trap": true,
-            "category": [
-                "Traps",
-                "TRAP - Freeze"
-            ]
+            "count": 300
         },
         {
             "name": "TRAP - Destroy your Car",
             "trap": true,
-            "category": [
-                "Traps",
-                "TRAP - Destroy your Car"
-            ]
+            "count": 300
         },
         {
             "name": "TRAP - Hold Talk",
             "trap": true,
-            "category": [
-                "Traps",
-                "TRAP - Hold Talk"
-            ]
+            "count": 300
         },
         {
             "name": "TRAP - No Shortcuts",
             "trap": true,
-            "category": [
-                "Traps",
-                "TRAP - No Shortcuts"
-            ]
+            "count": 300
         },
         {
             "name": "TRAP - No Pitstops",
             "trap": true,
-            "category": [
-                "Traps",
-                "TRAP - No Pitstops"
-            ]
+            "count": 300
         },
         {
             "name": "TRAP - Drive in Reverse",
             "trap": true,
-            "category": [
-                "Traps",
-                "TRAP - Drive in Reverse"
-            ]
+            "count": 300
+        },
+        {
+            "name": "Cheese Wedge",
+            "filler": true,
+            "count": 300
         }
     ]
 }

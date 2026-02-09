@@ -35,47 +35,5 @@
     },
     "Xalax Boss Checks": {
         "hidden": true
-    },
-    "TRAP - Item Embargo": {
-        "yaml_option": [
-            "enable_trap_item_embargo"
-        ],
-        "hidden": true
-    },
-    "TRAP - Freeze": {
-        "yaml_option": [
-            "enable_trap_freeze"
-        ],
-        "hidden": true
-    },
-    "TRAP - Destroy your Car": {
-        "yaml_option": [
-            "enable_trap_destroy_your_car"
-        ],
-        "hidden": true
-    },
-    "TRAP - Hold Talk": {
-        "yaml_option": [
-            "enable_trap_hold_talk"
-        ],
-        "hidden": true
-    },
-    "TRAP - No Shortcuts": {
-        "yaml_option": [
-            "enable_trap_no_shortcuts"
-        ],
-        "hidden": true
-    },
-    "TRAP - No Pitstops": {
-        "yaml_option": [
-            "enable_trap_no_pitstops"
-        ],
-        "hidden": true
-    },
-    "TRAP - Drive in Reverse": {
-        "yaml_option": [
-            "enable_trap_drive_in_reverse"
-        ],
-        "hidden": true
     }
 }

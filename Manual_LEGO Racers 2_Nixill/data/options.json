@@ -85,54 +85,77 @@
             "type": "Toggle",
             "default": true
         },
-        "enable_trap_item_embargo": {
+        "trap_count_item_embargo": {
             "description": [
-                "Whether or not the \"Item Embargo\" trap should be enabled."
+                "The number of \"Item Embargo\" traps that should be placed in the pool."
             ],
-            "type": "Toggle",
-            "default": true
+            "type": "Range",
+            "range_start": 0,
+            "range_end": 300,
+            "default": 300
         },
-        "enable_trap_freeze": {
+        "trap_count_freeze": {
             "description": [
-                "Whether or not the \"Freeze\" trap should be enabled."
+                "The number of \"Freeze\" traps that should be placed in the pool."
             ],
-            "type": "Toggle",
-            "default": true
+            "type": "Range",
+            "range_start": 0,
+            "range_end": 300,
+            "default": 300
         },
-        "enable_trap_destroy_your_car": {
+        "trap_count_destroy_your_car": {
             "description": [
-                "Whether or not the \"Destroy Your Car\" trap should be enabled."
+                "The number of \"Destroy Your Car\" traps that should be placed in the pool."
             ],
-            "type": "Toggle",
-            "default": true
+            "type": "Range",
+            "range_start": 0,
+            "range_end": 300,
+            "default": 300
         },
-        "enable_trap_hold_talk": {
+        "trap_count_hold_talk": {
             "description": [
-                "Whether or not the \"Hold Talk\" trap should be enabled."
+                "The number of \"Hold Talk\" traps that should be placed in the pool."
             ],
-            "type": "Toggle",
-            "default": true
+            "type": "Range",
+            "range_start": 0,
+            "range_end": 300,
+            "default": 300
         },
-        "enable_trap_no_shortcuts": {
+        "trap_count_no_shortcuts": {
             "description": [
-                "Whether or not the \"No Shortcuts\" trap should be enabled."
+                "The number of \"No Shortcuts\" traps that should be placed in the pool."
             ],
-            "type": "Toggle",
-            "default": true
+            "type": "Range",
+            "range_start": 0,
+            "range_end": 300,
+            "default": 300
         },
-        "enable_trap_no_pitstops": {
+        "trap_count_no_pitstops": {
             "description": [
-                "Whether or not the \"No Pitstops\" trap should be enabled."
+                "The number of \"No Pitstops\" traps that should be placed in the pool."
             ],
-            "type": "Toggle",
-            "default": true
+            "type": "Range",
+            "range_start": 0,
+            "range_end": 300,
+            "default": 300
         },
-        "enable_trap_drive_in_reverse": {
+        "trap_count_drive_in_reverse": {
             "description": [
-                "Whether or not the \"Drive in Reverse\" trap should be enabled."
+                "The number of \"Drive in Reverse\" traps that should be placed in the pool."
             ],
-            "type": "Toggle",
-            "default": true
+            "type": "Range",
+            "range_start": 0,
+            "range_end": 300,
+            "default": 300
+        },
+        "filler_count": {
+            "description": [
+                "The number of \"Cheese Wedge\" fillers that should be placed in the pool."
+            ],
+            "type": "Range",
+            "range_start": 0,
+            "range_end": 300,
+            "default": 300
         }
     }
 }

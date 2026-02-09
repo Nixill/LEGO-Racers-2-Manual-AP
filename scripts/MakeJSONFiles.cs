@@ -39,7 +39,6 @@ LegoWorld SandyBay = new LegoWorld(
     "Workman Jon",
     "Workman Rob"
   ],
-  NPCBossName: null,
   WorldIndex: 1,
   IsStartingWorld: true
 );
@@ -68,7 +67,6 @@ LegoWorld DinoIsland = new LegoWorld(
     "Pippin",
     "Slyboots"
   ],
-  NPCBossName: "Sam Sanister",
   WorldIndex: 2
 );
 
@@ -94,7 +92,6 @@ LegoWorld Mars = new LegoWorld(
     "Scientist",
     "Vega"
   ],
-  NPCBossName: "Riegel",
   WorldIndex: 3
 );
 
@@ -119,7 +116,6 @@ LegoWorld Arctic = new LegoWorld(
     "Doc (Arctic)",
     "Frosty"
   ],
-  NPCBossName: "The Berg",
   WorldIndex: 4
 );
 
@@ -140,7 +136,6 @@ LegoWorld Xalax = new LegoWorld(
   NPCNames: [
     "Warrior"
   ],
-  NPCBossName: "Rocket Racer",
   WorldIndex: 5,
   IsFinalWorld: true
 );
@@ -164,7 +159,8 @@ File.WriteAllText("Manual_LEGO Racers 2_Nixill/data/items.json", RemoveNullObj(n
     .. Mars.GetItems(),
     .. Arctic.GetItems(),
     .. Xalax.GetItems(),
-    .. GetTraps()
+    .. GetTraps(),
+    GetCheeseWedge()
   ])
 }).ToJsonString(options));
 
@@ -196,7 +192,14 @@ JsonObject GetTrap(string name) => new JsonObject
 {
   ["name"] = $"TRAP - {name}",
   ["trap"] = true,
-  ["category"] = new JsonArray(["Traps", $"TRAP - {name}"])
+  ["count"] = 300
+};
+
+JsonObject GetCheeseWedge() => new JsonObject
+{
+  ["name"] = "Cheese Wedge",
+  ["filler"] = true,
+  ["count"] = 300
 };
 
 JsonObject RemoveNullObj(JsonObject input)
@@ -261,7 +264,7 @@ IEnumerable<JsonObject> GetVictoryLocations() =>
   }
 ];
 
-record class LegoWorld(string WorldName, string[] RaceNames, string? BossRaceName, string[] GoldenBrickNames, string[] NPCNames, string? NPCBossName, int WorldIndex, bool IsStartingWorld = false, bool IsFinalWorld = false)
+record class LegoWorld(string WorldName, string[] RaceNames, string? BossRaceName, string[] GoldenBrickNames, string[] NPCNames, int WorldIndex, bool IsStartingWorld = false, bool IsFinalWorld = false)
 {
   public IEnumerable<JsonObject> GetItems()
   {
@@ -372,14 +375,5 @@ record class LegoWorld(string WorldName, string[] RaceNames, string? BossRaceNam
         ["requires"] = IsStartingWorld ? null : $"|{WorldName} Exploration Key|"
       };
     }
-
-    if (NPCBossName != null)
-      yield return new JsonObject
-      {
-        ["name"] = $"NPC: {NPCBossName}",
-        ["requires"] = $"{{OptionCount({WorldName} Boss Key, {(IsFinalWorld ? "boss" : "xalax")}_keys_needed)}}",
-        ["category"] = new JsonArray([WorldName, "Talksanity"]),
-        ["sort-key"] = $"{WorldIndex}-4-{NPCNames.Length + 1}"
-      };
   }
 }
