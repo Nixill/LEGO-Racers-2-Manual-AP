@@ -82,25 +82,25 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
-    # Hard Bonus Game Keys: Progression or filler?
+    # Hard Bonus Game Keys: Progression or just useful?
     if is_option_enabled(multiworld, player, "bonus_games_are_checks") or get_option_value(multiworld, player, "goal_condition") >= 4:
-        bonusGameItemConfig = {"progression": 1, "filler": 0}
+        bonusGameItemConfig = {"progression": 1, "useful": 0}
     else:
-        bonusGameItemConfig = {"progression": 0, "filler": 1}
+        bonusGameItemConfig = {"progression": 0, "useful": 1}
     for s in ["Sandy Bay", "Dino Island", "Mars", "Arctic", "Xalax"]:
         item_config[s + " Hard Bonus Game Key"] = bonusGameItemConfig
 
-    # Non-Xalax Boss Keys: Progression or filler?
+    # Non-Xalax Boss Keys: Progression or just useful?
     for s in ["Dino Island", "Mars", "Arctic"]:
         item_config[s + " Boss Key"] = {
             "progression": get_option_value(multiworld, player, "boss_keys_needed"),
-            "filler": get_option_value(multiworld, player, "boss_keys_extra")
+            "useful": get_option_value(multiworld, player, "boss_keys_extra")
         }
 
-    # Xalax Boss Keys: Progression or filler?
+    # Xalax Boss Keys: Progression or just useful?
     item_config["Xalax Boss Key"] = {
         "progression": get_option_value(multiworld, player, "xalax_keys_needed"),
-        "filler": get_option_value(multiworld, player, "xalax_keys_extra")
+        "useful": get_option_value(multiworld, player, "xalax_keys_extra")
     }
 
     # Trap counts

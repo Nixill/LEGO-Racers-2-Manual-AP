@@ -5,7 +5,7 @@
             "name": "Sandy Bay Hard Bonus Game Key",
             "classification_count": {
                 "progression": 1,
-                "filler": 1
+                "useful": 1
             },
             "category": [
                 "Sandy Bay",
@@ -46,8 +46,10 @@
         },
         {
             "name": "Dino Island Boss Key",
-            "count": 5,
-            "progression": true,
+            "classification_count": {
+                "progression": 5,
+                "useful": 5
+            },
             "category": [
                 "Dino Island",
                 "Boss Keys"
@@ -65,7 +67,7 @@
             "name": "Dino Island Hard Bonus Game Key",
             "classification_count": {
                 "progression": 1,
-                "filler": 1
+                "useful": 1
             },
             "category": [
                 "Dino Island",
@@ -106,8 +108,10 @@
         },
         {
             "name": "Mars Boss Key",
-            "count": 5,
-            "progression": true,
+            "classification_count": {
+                "progression": 5,
+                "useful": 5
+            },
             "category": [
                 "Mars",
                 "Boss Keys"
@@ -125,7 +129,7 @@
             "name": "Mars Hard Bonus Game Key",
             "classification_count": {
                 "progression": 1,
-                "filler": 1
+                "useful": 1
             },
             "category": [
                 "Mars",
@@ -166,8 +170,10 @@
         },
         {
             "name": "Arctic Boss Key",
-            "count": 5,
-            "progression": true,
+            "classification_count": {
+                "progression": 5,
+                "useful": 5
+            },
             "category": [
                 "Arctic",
                 "Boss Keys"
@@ -185,7 +191,7 @@
             "name": "Arctic Hard Bonus Game Key",
             "classification_count": {
                 "progression": 1,
-                "filler": 1
+                "useful": 1
             },
             "category": [
                 "Arctic",
@@ -226,8 +232,10 @@
         },
         {
             "name": "Xalax Boss Key",
-            "count": 5,
-            "progression": true,
+            "classification_count": {
+                "progression": 5,
+                "useful": 5
+            },
             "category": [
                 "Xalax",
                 "Boss Keys"
@@ -245,7 +253,7 @@
             "name": "Xalax Hard Bonus Game Key",
             "classification_count": {
                 "progression": 1,
-                "filler": 1
+                "useful": 1
             },
             "category": [
                 "Xalax",

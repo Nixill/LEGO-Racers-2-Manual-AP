@@ -280,8 +280,11 @@ record class LegoWorld(string WorldName, string[] RaceNames, string? BossRaceNam
       yield return new JsonObject
       {
         ["name"] = $"{WorldName} Boss Key",
-        ["count"] = 5,
-        ["progression"] = true,
+        ["classification_count"] = new JsonObject
+        {
+          ["progression"] = 5,
+          ["useful"] = 5
+        },
         ["category"] = new JsonArray([WorldName, "Boss Keys"])
       };
       yield return new JsonObject
@@ -297,7 +300,7 @@ record class LegoWorld(string WorldName, string[] RaceNames, string? BossRaceNam
       ["classification_count"] = new JsonObject
       {
         ["progression"] = 1,
-        ["filler"] = 1
+        ["useful"] = 1
       },
       ["category"] = new JsonArray([WorldName, "Exploration and Minigames"])
     };
