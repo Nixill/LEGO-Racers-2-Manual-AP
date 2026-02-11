@@ -216,10 +216,10 @@ def format_to_valid_identifier(input: str) -> str:
         # if its already a valid keyword no need to check all its characters
         return input
 
-    if input[:1].isdigit():
+    if input[:1].isdecimal():
         input = "_" + input
 
-    input = "".join([c if c.isdigit() or c.isidentifier() else "_" for c in input])
+    input = "".join([c if f"_{c}".isidentifier() else "_" for c in input])
 
     return input
 
